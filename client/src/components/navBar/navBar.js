@@ -69,7 +69,19 @@ function Navbar(props) {
                 <div className={classes.logoBox}>
                     <h3 className={`${classes.logo} hover` }>Bank of Jesse</h3>
                 </div>
+
+                
                 <div className={`${classes.btnBox}`}>
+                <div
+                    className={user.email? classes.lnkBox:classes.none}>
+                        <p className={`${classes.link} hover`} 
+ 
+                        onClick= {()=> {
+                        setup(up+=1);
+                        }}
+
+                         activeclass="active">{user.name}</p>
+                    </div>
                     <div
                     className={classes.lnkBox}
                     
@@ -95,9 +107,9 @@ function Navbar(props) {
                          activeclass="active">Logout</NavLink>
                         <p className={`des ${showLogout?null:'none'}`}>This is the Logout Button</p>
                     </div>
+
                     <div
                     className={user.email? classes.none:classes.lnkBox}
-                    
                     >
                         <NavLink to="/createAccount" className={`${classes.link} hover`} 
                         onMouseEnter={(e)=> setShowC(true)}
