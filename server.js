@@ -38,9 +38,7 @@ let userV = 'stuff';
 let make = async()=> {userV = await user.find()};
 make();
 
-app.get('/', (req,res)=>{
-    res.render('index', {user: userV, text: 'Test'});
-})
+
 
 
 app.listen(3001);
