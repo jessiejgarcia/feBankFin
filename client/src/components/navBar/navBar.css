@@ -1,0 +1,14 @@
+.hover:hover{
+
+    display: block;
+}
+.des{
+    background-color: aliceblue;
+    font-weight: 700;
+    font-size: larger;
+    border: solid black 2px;
+    border-radius: 5px;
+}
+.none{
+    display: none;
+}
