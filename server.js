@@ -8,8 +8,7 @@ const user = require('./models/createAccount');
 const allData = require('./routes/allData');
 const bodyParser = require('body-parser');
 const path = require('path');
-const uri = "mongodb+srv://Admin:FXc4fKAJ4UEOAPw5@cluster0.771xm.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
-
+const uri = process.env.MDB_URI;
 
 mongoose.connect(uri, {
     useNewUrlParser: true, useUnifiedTopology: true
